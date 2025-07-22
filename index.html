@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+    <title>X-clone of twitter</title>
+    <link rel="shortcut icon" href="https://twitter.com/favicon.ico" type="image/x-icon">
+    <style>
+        .icon-large {
+            font-size: 30px;
+        }
+    
+        .icon-min {
+            font-size: 20px;
+        }
+    
+        .hidden-scroll {
+            height: 100%;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+    
+        .hidden-scroll::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-black font-serif text-white">
+    <div class="main-box w-screen h-screen p-1 flex ">
+        <div class="Fix-box w-1/4 p-1 flex flex-col gap-1 ">
+            <div class="flex justify-center items-center  p-1">
+                <ul class="flex flex-col gap-4">
+                    <li><svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="w-8 h-8 fill-white r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-rxcuwo r-1777fci r-m327ed r-494qqr">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg></li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl gap-5 p-2"><i
+                            class="material-icons w-8">home</i>Home</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl gap-5 p-2"><i
+                            class="material-icons">search</i>Explore</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl gap-5 p-2"><i
+                            class="material-icons">notifications</i>Notifications</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl p-2"><i
+                            class="material-icons">messages</i>Messages</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl gap-5 p-2"><i
+                            class="material-icons">hide_source</i>Grok</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl gap-5 p-2"><i
+                            class="material-icons">person_2</i>Profile</li>
+                    <li class="flex items-center scale-115 cursor-pointer hover:bg-[#1b2528] rounded-xl  gap-5 p-2"><i
+                            class="material-icons">pending</i>More</li>
+                    <li
+                        class="flex items-center justify-center cursor-pointer  p-2 rounded-4xl font-bold bg-[#1b2528] text-2xl">
+                        Post</li>
+                    <li class="cursor-pointer hover:bg-[#1b2528] rounded-xl">
+                        <div class="box3 p-2 flex items-center gap-2">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="https://cdn2.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP-Images-For-Boys-1.jpg.avif"
+                                    alt="Profile" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="content flex flex-col">
+                                <span class="text-[16px]">shikhar sharma</span>
+                                <span class="text-[14px] text-[#58595a]">@shikharsha84159</span>
+                            </div>
+                            <div><i class="material-icons">more_horiz</i></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- this is the middle box for showing the content of X  -->
+        <div id="div1" class="middle-box  border-l-2 border-r-2 border-[#7b7365] w-1/2 h-full overflow-y-scroll hidden-scroll flex flex-col">
+            <div class="first-box flex h-15 border-b-2 border-[#7b7365]">
+                <div class="for-you flex justify-center items-center w-1/2 h-full"><span class="cursor-pointer hover:text-white text-[#5f6263]">For you</span></div>
+                <div class="following flex justify-center items-center w-1/2 h-full"><span class="cursor-pointer hover:text-white text-[#5f6263]">Following</span></div>
+            </div>
+            <div class="second-box flex flex-col  border-b border-b-[#26292b] h-35">
+                <div class="h-[100px] w-full flex ">
+                    <div class="w-10 h-10 ml-2 mt-2 rounded-full overflow-hidden">
+                        <img src="https://cdn2.momjunction.com/wp-content/uploads/2019/07/Whatsapp-DP-Images-For-Boys-1.jpg.avif"
+                            alt="Profile" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="w-full h-full mr-2 pl-2 pr-2 flex flex-col  border-b border-b-[#7b7365] text-[#9d9588] ">
+                        <input type="text" placeholder="What's happening?" class="w-full  mt-2 text-2xl h-[40px] rounded-md focus:border-transparent focus:outline-none ">
+                        <div class="mt-2 m-2 flex items-center gap-1 w-[175px]  rounded-md hover:bg-[#0a0e11] cursor-pointer">
+                            <div class="mt-1 pl-2"><i class="material-icons icon-min text-[#31a4f1]">public</i></div>
+                            <div class="text-[#31a4f1]">Everyone can reply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="other-items ml-[65px] flex items-center">
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">photo</i></span>
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">gif</i></span>
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">hide_source</i></span>
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">ballot</i></span>
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">mood</i></span>
+                        <span class="w-8 h-8  text-center hover:bg-[#0a0e11] rounded-xl"><i class="material-icons icon-min pt-[4px] cursor-pointer text-[#31a4f1]">schedule</i></span>
+                    </div>
+                    <div class="pr-3 text-[14px]"><button class="rounded-xl p-2 bg-[#0e1314] text-[#6e6c6a] font-bold">Post</button></div>
+
+                </div>
+            </div>
+            <div class="third-box flex h-10 border-b-2 border-[#7b7365] justify-center items-center">
+                <div class="text-[#31a4f1] cursor-pointer hover:text-blue-500">Show 147 posts</div>
+            </div>
+            <div class="fourth-box flex  flex-col h-60 border-b border-[#26292b]">
+                <div class="text-end"><i class="material-icons text-[#9d9588] hover:text-blue-800 cursor-pointer">more_horiz</i></div>
+                <div class="flex flex-col h-full p-4 pr-[40px]  gap-3">
+                     <div class="text-gray-200 text-3xl font-bold">Earn on X</div>
+                     <div><p class="text-[#5f6263]">If eligible, you can receive a share of ads revenue just by posting on X. You must be subscribed to X Premium.</p></div>
+                     <div class=""><button class="p-3 rounded-full text-[16px] cursor-pointer bg-[#1b2528] hover:bg-gray-900">Subscribe today</button></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- this is the third box -->
+        <div id="div2" class="Fix-box flex flex-col gap-3  w-1/3 p-4 pr-16 h-full overflow-y-scroll relative">
+
+            <!-- The seachbar -->
+            <input class="border-2 p-2 border-[#7b7365] rounded-2xl" type="text" placeholder="Search">
+
+            <!-- the subscribe box -->
+            <div class="subscribe border-2 border-[#7b7365] rounded-2xl h-40 flex flex-col gap-2 p-3">
+                <h2 class="text-[20px] text-gray-200 font-bold">Subscribe to Premium</h2>
+                <p class="text-gray-200 text-[15px]">Subscribe to unlock new features and if eligible, receive a share
+                    of revenue.</p>
+                <button
+                    class="p-2 w-32 cursor-pointer hover:bg-white hover:text-blue-500 bg-blue-500 text-white font-bold rounded-2xl ">Subscribe</button>
+            </div>
+
+            <!-- this is the second div of third box -->
+            <div class="subscribe border-2 border-[#7b7365] rounded-2xl h-full flex flex-col gap-3 p-3">
+                <div class="happening">
+                    <h2 class="text-[20px] text-gray-200 font-bold">What's happening</h2>
+                </div>
+                <div class="news flex justify-between cursor-pointer rounded-2xl">
+                    <div class="news-items flex flex-col">
+                        <div><span class="text-[14px] text-[#5f6263]">Poilitics. Trending</span></div>
+                        <div><span class="text-gray-200 font-bold text-[14px]"> #khamenei </span></div>
+                        <div><span class="text-[14px] text-[#5f6263]">28.2K posts</span></div>
+                    </div>
+                    <div class="options"><i class="material-icons text-[#9d9588] hover:text-blue-800 hover:bg-blue-400 hover:rounded-xl">more_horiz</i>
+                    </div>
+                </div>
+                <div class="news flex justify-between cursor-pointer rounded-2xl">
+                    <div class="news-items flex flex-col">
+                        <div><span class="text-[14px] text-[#5f6263]">Trending in India</span></div>
+                        <div><span class="text-gray-200 font-bold text-[14px]"> Gopal Italia </span></div>
+                        <div><span class="text-[14px] text-[#5f6263]">2,221 posts</span></div>
+                    </div>
+                    <div class="options"><i class="material-icons text-[#9d9588] hover:text-blue-800 hover:bg-blue-400 hover:rounded-xl">more_horiz</i>
+                    </div>
+                </div>
+                <div class="news flex justify-between cursor-pointer rounded-2xl">
+                    <div class="news-items flex flex-col">
+                        <div><span class="text-[14px] text-[#5f6263]">Trending in Inida</span></div>
+                        <div><span class="text-gray-200 font-bold text-[14px]">#MurugaBhakthargalManadu </span></div>
+                        <div><span class="text-[14px] text-[#5f6263]">76.9K posts</span></div>
+                    </div>
+                    <div class="options"><i class="material-icons text-[#9d9588] hover:text-blue-800 hover:bg-blue-400 hover:rounded-xl">more_horiz</i>
+                    </div>
+                </div>
+                <div class="news flex justify-between cursor-pointer rounded-2xl">
+                    <div class="news-items flex flex-col">
+                        <div><span class="text-[14px] text-[#5f6263]">Trending in India</span></div>
+                        <div><span class="text-gray-200 font-bold text-[14px]"> #psginter </span></div>
+                        <div><span class="text-[14px] text-[#5f6263]">6,064 posts</span></div>
+                    </div>
+                    <div class="options"><i class="material-icons text-[#9d9588] hover:text-blue-800 hover:bg-blue-400 hover:rounded-xl">more_horiz</i>
+                    </div>
+                </div>
+                <div class="news flex justify-between cursor-pointer rounded-2xl">
+                    <div class="news-items flex flex-col">
+                        <div><span class="text-[14px] text-[#5f6263]">Entertainment. Trending</span></div>
+                        <div><span class="text-gray-200 font-bold text-[14px]"> #YashBOSS </span></div>
+                        <div><span class="text-[14px] text-[#5f6263]">4,668 posts</span></div>
+                    </div>
+                    <div class="options"><i class="material-icons text-[#9d9588] hover:text-blue-800 hover:bg-blue-400 hover:rounded-xl">more_horiz</i>
+                    </div>
+                </div>
+                <div class="mt-2"><span class="text-blue-500 cursor-pointer hover:underline hover:text-blue-300">Show
+                        more</span></div>
+            </div>
+
+
+            <!-- this is the third div which is showing the profiles to follow -->
+            <div class="profile-box border-2 border-[#7b7365] rounded-2xl h-full flex flex-col gap-3 p-3">
+                <div>
+                    <h2 class="text-[20px] text-gray-200 font-bold">Who to follow</h2>
+                </div>
+
+                <!-- this is the profiles, you can follow  -->
+                <div class="follow border-2  border-[#7b7365] rounded-2xl flex justify-between items-center p-1">
+                    <div class="image-box-with-content flex items-center gap-2 p-1">
+                        <div class="profile-image w-10 h-10 rounded-full overflow-hidden ">
+                            <img src="https://dthezntil550i.cloudfront.net/8x/latest/8x2201051055489910015298572/aa9e9917-343c-4169-950d-df4bf696ba90.png"
+                                class="w-full h-full object-cover" alt="profile-image">
+                        </div>
+                        <div class="profile-content flex flex-col">
+                            <span class="text-[14px] text-gray-200 hover:underline cursor-pointer">Harsh Vardhan</span>
+                            <span class="text-[14px] text-[#5f6263]">@harshParashari</span>
+                        </div>
+                    </div>
+                    <div><button
+                            class="bg-[#7b7365] text-white w-20 h-8 text-[14px] rounded-3xl cursor-pointer hover:bg-[#373d3f]">Follow</button>
+                    </div>
+                </div>
+
+
+                <div class="follow border-2  border-[#7b7365] rounded-2xl flex justify-between items-center p-1">
+                    <div class="image-box-with-content flex items-center gap-2 p-1">
+                        <div class="profile-image w-10 h-10 rounded-full overflow-hidden ">
+                            <img src="https://i.pinimg.com/474x/8d/b2/3a/8db23a8067650cb58169b885823ac97f.jpg"
+                                class="w-full h-full object-cover" alt="profile-image">
+                        </div>
+                        <div class="profile-content flex flex-col">
+                            <span class="text-[14px] text-gray-200 hover:underline cursor-pointer">Maahi Sharma</span>
+                            <span class="text-[14px] text-[#5f6263]">@mahiisharmaa</span>
+                        </div>
+                    </div>
+                    <div><button
+                            class="bg-[#7b7365] text-white w-20 h-8 text-[14px] rounded-3xl cursor-pointer hover:bg-[#373d3f]">Follow</button>
+                    </div>
+                </div>
+
+
+                <div class="follow border-2  border-[#7b7365] rounded-2xl flex justify-between items-center p-1">
+                    <div class="image-box-with-content flex items-center gap-2 p-1">
+                        <div class="profile-image w-10 h-10 rounded-full overflow-hidden ">
+                            <img src="https://i.pinimg.com/736x/fc/9f/a5/fc9fa54a378fe3080632a44d2182e8c1.jpg"
+                                class="w-full h-full object-cover" alt="profile-image">
+                        </div>
+                        <div class="profile-content flex flex-col">
+                            <span class="text-[14px] text-gray-200 hover:underline cursor-pointer">TheInfinteSoul</span>
+                            <span class="text-[14px] text-[#5f6263]">@TheInfinteSoul</span>
+                        </div>
+                    </div>
+                    <div><button
+                            class="bg-[#7b7365] text-white w-20 h-8 text-[14px] rounded-3xl cursor-pointer hover:bg-[#373d3f]">Follow</button>
+                    </div>
+                </div>
+                <div class="mt-2"><span class="text-blue-500 cursor-pointer hover:underline hover:text-blue-300">Show
+                        more</span></div>
+            </div>
+            <div class="footer-box p-5 m-2 mb-[100px]">
+                <span class="text-[13px] text-[#5f6263] hover:underline cursor-pointer">Terms of Service |</span>
+                <span class="text-[13px] text-[#5f6263] hover:underline cursor-pointer"> Privacy Policy</span>
+                <span class="text-[13px] text-[#5f6263] hover:underline cursor-pointer">| Cookie Policy</span>
+                <span class="text-[13px] text-[#5f6263] hover:underline cursor-pointer">| More ...</span>
+                <!-- <span class="text-[13px] text-[#5f6263] "><i class="material-icons">more_horiz</i></span> -->
+                <span class="text-[13px] text-[#5f6263]">&copy;2025 X Crop.</span>
+            </div>
+            <div
+                class="fix-icon fixed right-14 bottom-5 border-2 border-[#7b7365] shadow-xl bg-black rounded-2xl flex justify-center items-center">
+                <i class="material-icons icon-large text-white p-2">hide_source</i></div>
+        </div>
+    </div>
+
+
+    <script>
+        const div1 = document.getElementById("div1");
+        const div2 = document.getElementById("div2");
+
+        let isSyncing = false;
+
+        function syncScroll(source, target) {
+            if (!isSyncing) {
+                isSyncing = true;
+                target.scrollTop = source.scrollTop;
+            }
+            isSyncing = false;
+        }
+
+        div1.addEventListener("scroll", () => syncScroll(div1, div2));
+        div2.addEventListener("scroll", () => syncScroll(div2, div1));
+    </script>
+</body>
+
+</html>
